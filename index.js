@@ -143,7 +143,7 @@ function startGame() {
             // Check for a winner after each move
             console.log(winner);
             if (winner != null) {
-                document.getElementById("Msg").innerHTML = `${winner.name} TOESSSS! <br> Press any cell to play again!`;
+                document.getElementById("Msg").textContent = `${winner.name} TOESSSS!\n Press any cell to play again!`;
                 
                 const cells = document.querySelectorAll('.cell');
                 cells.forEach(cell => {
